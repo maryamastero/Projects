@@ -1,0 +1,29 @@
+module load anaconda
+mamba env create -f file.yml
+conda create -n my_env 
+
+source activate my_env
+
+pip install networkx
+
+conda install numpy scipy matplotlib pandas scikit-learn
+
+conda install -c rdkit rdkit
+
+conda install pytorch -c pytorch
+
+pip install torch_geometric
+
+pip install torch_scatter torch_sparse 
+
+
+pip install torch_cluster torch_spline_conv 
+
+
+conda env remove -n ENV_NAME
+
+For exporting condo env to vsc:
+
+conda activate <env_name>
+conda install ipykernel
+python -m ipykernel install --user --name=<env_name>
