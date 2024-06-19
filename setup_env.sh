@@ -12,10 +12,13 @@ pip install torch-scatter torch-sparse torch-cluster torch-spline-conv torch-geo
 
 conda install -c conda-forge rdkit -y
 
+conda install -c conda-forge deepchem
+
 pip install mlflow
 
 pip install streamlit
 
 pip install fastai
+
 
 echo "Setup complete. To activate the environment, use 'conda activate deepenv'."
