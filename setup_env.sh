@@ -12,13 +12,17 @@ pip install torch-scatter torch-sparse torch-cluster torch-spline-conv torch-geo
 
 conda install -c conda-forge rdkit -y
 
-conda install -c conda-forge deepchem
+conda install -c conda-forge seaborn
+
+conda install -c conda-forge deepchem -y
 
 pip install mlflow
 
 pip install streamlit
 
 pip install fastai
+
+pip install git+https://github.com/ARM-software/mango.git
 
 
 echo "Setup complete. To activate the environment, use 'conda activate deepenv'."
