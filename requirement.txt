@@ -43,6 +43,11 @@ try:
     print("fastai version:", fastai.__version__)
 except ImportError:
     print("fastai is not installed")
+try:
+    import deepchem as dc
+    print("DeepChem version:", dc.__version__)
+except ImportError:
+    print("DeepChem is not installed")
 
 
 To get a list of all conda environments and remove the environment:
